@@ -1,6 +1,6 @@
 # Hof.js starter
 
-This is a starter template for new projects based on Hof.js.
+This is a starter template for new projects based on [Hof.js](https://github.com/hofjs/hof).
 
 It demonstrates the basic features of this framework and supports hot module reloading.
 
@@ -16,7 +16,6 @@ npm install -g @hofjs/hofjs-starter
 
 
 ## Running (with HMR enabled)
----
 
 ```
 npm start
