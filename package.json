@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Hof.js starter project with hot module reloading",
   "author": "Hof.js contributors",
-  "repository": "https://github.com/hofjs/hof",
+  "repository": "https://github.com/hofjs/starter",
   "license": "MIT",
   "keywords": [
     "hofjs",
