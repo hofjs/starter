@@ -11,7 +11,9 @@ All js files in the project are automatically bundled. The resulting file can be
 ## Installation
 
 ```
-npm install -g @hofjs/hofjs-starter
+git clone https://github.com/hofjs/starter.git
+
+npm install
 ```
 
 
