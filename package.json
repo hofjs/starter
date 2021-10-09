@@ -1,6 +1,6 @@
 {
   "name": "@hofjs/hofjs-starter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hof.js starter project with hot module reloading",
   "author": "Hof.js starter contributors",
   "repository": "https://github.com/hofjs/starter",
@@ -14,12 +14,12 @@
     "start": "webpack serve --mode development --env development --content-base=www --hot --inline"
   },
   "devDependencies": {
-    "webpack": "^5.48.0",
-    "webpack-cli": "^4.7.2",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0",
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "@hofjs/hofjs": "0.0.2",
+    "@hofjs/hofjs": "0.0.6",
     "query-selector-shadow-dom": "^1.0.0"
   }
 }
