@@ -1,12 +1,16 @@
 # Hof.js starter
 
-This is a starter template for new projects based on [Hof.js](https://github.com/hofjs/hof).
+This is a starter template for new projects based on [Hof.js](https://github.com/hofjs/hof). It is an open source project of Hof University of Applied Sciences and was created by Prof. Dr. Walter Kern. It is maintained by [Hof.js contributors](https://github.com/hofjs/hof/graphs/contributors). Contact us if you would like to contribute.
 
-It demonstrates the basic features of this framework and supports hot module reloading.
+## Contact
+* [Hof University of Applied Sciences](https://www.hof-university.com/)
+* [Impressum / Imprint](https://www.hof-university.de/impressum.html)
 
-The extensions to Hof.js required for HMR support are implemented in hmr.js. This file is imported into index.js.
-
-All js files in the project are automatically bundled. The resulting file can be imported as bundle.js. This is done in index.html.
+## Key features
+This starter template has the following advantages, among others:
+* It demonstrates the basic features of this framework and supports hot module reloading.
+* The extensions to Hof.js required for HMR support are implemented in hmr.js. This file is imported into index.js.
+* All js files in the project are automatically bundled. The resulting file can be imported as bundle.js. This is done in index.html.
 
 ## Installation
 
