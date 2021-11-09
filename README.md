@@ -3,8 +3,8 @@
 This is a starter template for new projects based on [Hof.js](https://github.com/hofjs/hof). It is an open source project of Hof University of Applied Sciences and was created by Prof. Dr. Walter Kern. It is maintained by [Hof.js starter template contributors](https://github.com/hofjs/starter/graphs/contributors). Contact us if you are a student of Hof University of Applied Sciences and would like to contribute.
 
 ## Contact
-* Organization: https://www.hof-university.com
-* Mail: androidapps@hof-university.de
+* Organization: https://www.hof-university.de
+* Mail: hofjs@hof-university.de
 * Impressum / Imprint: https://www.hof-university.de/impressum.html
 
 ## Key features
