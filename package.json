@@ -19,7 +19,7 @@
     "webpack-dev-server": "^4.7.3"
   },
   "dependencies": {
-    "@hofjs/hofjs": "0.0.22",
+    "@hofjs/hofjs": "1.0.0",
     "query-selector-shadow-dom": "^1.0.0"
   }
 }
