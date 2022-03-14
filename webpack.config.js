@@ -8,6 +8,11 @@ const config = {
   },
   optimization: {
     moduleIds: 'named',
+  },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'www'),
+    }
   }
 };
 module.exports = config;
