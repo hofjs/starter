@@ -1,11 +1,10 @@
 import { querySelectorAllDeep } from "query-selector-shadow-dom";
-import { HofHtmlElement } from "@hofjs/hofjs/lib/esm/hof";
 
 // Source for custom element proxy
 // https://codepen.io/stiggler/pen/XPJjyp
 
 export function enableHofHmr(...rootComponents) {
-    customElements.rootComponents = rootComponents.map(c => c.componentName);
+    customElements.rootComponents = rootComponents;
 }
 
 function setupHofHmr() {
@@ -34,10 +33,21 @@ function setupHofHmr() {
 
         // Apply new class to current instances of custom element
         querySelectorAllDeep(name).forEach((node) => {
-            Object.setPrototypeOf(node, clazz.prototype)
+            // Apply new prototype
+            Object.setPrototypeOf(node, clazz.prototype);
+
+            // Make methods object properties
+            for (const name of Object.getOwnPropertyNames(clazz.prototype))
+              node[name] = clazz.prototype[name].bind(node);
+
+            // Copy templates and styles
+            const newInstance = document.createElement(name);
+            node.templates = newInstance.templates;
+            node.styles = newInstance.styles;
 
             // Rerender
-            node.connectedCallback();
+            node._root.innerHTML = "";
+            node.render();
         });
 
         // Log processed element to detect hmr component bubble up
@@ -72,21 +82,6 @@ function setupHofHmr() {
       Object.setPrototypeOf(target, source);  
     }
 }
-
-if (HofHtmlElement)
-  HofHtmlElement.prototype._forEachPropertyOfObjectAndPrototype = function(func) {
-    for (const name of Object.getOwnPropertyNames(this).filter(this.PROPS_FILTER))
-        func(name, this);
-    const prototype = Object.getPrototypeOf(this);
-    for (const name of Object.getOwnPropertyNames(prototype).filter(this.PROPS_FILTER))
-        func(name, prototype);
-
-    if (Object.getPrototypeOf(this).constructor.name == "CustomElementConstructor") {
-        const prototype = Object.getPrototypeOf(Object.getPrototypeOf(this));
-        for (const name of Object.getOwnPropertyNames(prototype).filter(this.PROPS_FILTER))
-            func(name, prototype);    
-    }
-  }
 
 // Needs to be executed at import because otherwise the other
 // component imports already call customElements.define

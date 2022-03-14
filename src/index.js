@@ -2,7 +2,7 @@ import { enableHofHmr } from './hmr.js'
 import { AppRoot } from "./components/app-root";
 
 // Enable HMR for Hof components
-enableHofHmr(AppRoot);
+enableHofHmr("app-root");
 
 // Enable HMR for all modules referenced from this module (recursive)
 if (module.hot)
