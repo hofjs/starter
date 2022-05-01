@@ -10,11 +10,6 @@ Contact us if you are a student of Hof University of Applied Sciences and would 
 * Mail: hofjs@hof-university.de
 * Impressum / Imprint: https://www.hof-university.de/impressum.html
 
-## Contact
-* Organization: https://www.hof-university.de
-* Mail: hofjs@hof-university.de
-* Impressum / Imprint: https://www.hof-university.de/impressum.html
-
 ## Key features
 * This starter template **demonstrates the basic features** of this framework and **supports hot module reloading**.
 * The **extensions to Hof.js required for HMR support are implemented in hmr.js**. **This file is imported into index.js**.
@@ -40,7 +35,7 @@ Open [http://localhost:8080](http://localhost:8080).
 
 ## Documentation
 
-Due to the early stage of development of this starter, no documentation exists yet. However, since it is very much based on JavaScript and web standards and allows intuitive development, the above explanations are usually sufficient to use all features.
+The documentation with a step-by-step guide can be found at https://hofjs.github.io.
 
 You can contribute by sending pull requests to [this repository](https://github.com/hofjs/starter).
 
