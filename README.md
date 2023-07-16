@@ -1,4 +1,4 @@
-# Hof.js starter
+# #Deprecated
 
 
 **Hof.js starter** is a **template for new projects based on Hof.js** and part of [Hof.js](https://github.com/hofjs/hof). It is an **open source project of Hof University of Applied Sciences** and **was created by Prof. Dr. Walter Kern**.
